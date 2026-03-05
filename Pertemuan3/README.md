@@ -6,7 +6,7 @@ Absen   : 11 <br>
 
 ---
 
-# Praktikum 1: Menerapkan Control Flows (if/else)
+# Praktikum 1: Menerapkan Control Flows ("if/else")
 
 ## Langkah 1
 
@@ -94,7 +94,7 @@ void main() {
 
 ---
 
-# Praktikum 2: Menerapkan Perulangan while dan do-while
+# Praktikum 2: Menerapkan Perulangan "while" dan "do-while"
 
 ## Langkah 1
 
@@ -167,7 +167,7 @@ Pada program ini angka akan ditampilkan mulai dari **33 sampai 76**.
 
 ---
 
-# Praktikum 3: Menerapkan Perulangan for dan break-continue
+# Praktikum 3: Menerapkan Perulangan "for" dan "break-continue"
 
 ## Langkah 1
 
