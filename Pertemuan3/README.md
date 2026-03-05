@@ -27,7 +27,7 @@ if (test == "test2") print("Test2 again");
 ```
 
 ### Output
-![Output](img/Output Langkah1-Prak1.png)
+![Output](img/Output-Langkah1-Prak1.png)
 
 ---
 
@@ -63,7 +63,7 @@ if (test) {
 ```
 
 ### Output
-![Output](img/Output Langkah3-Prak1.png)
+![Output](img/Output-Langkah3-Prak1.png)
 
 ### Jawaban
 
@@ -109,7 +109,7 @@ while (counter < 33) {
 ```
 
 ### Output
-![Output](img/Output Langkah1-Prak2.png)
+![Output](img/Output-Langkah1-Prak2.png)
 
 ---
 
@@ -119,7 +119,7 @@ while (counter < 33) {
 Silakan coba eksekusi (Run) kode pada langkah 1 tersebut. Apa yang terjadi? Jelaskan!
 
 ### Output
-![Output](img/Output Langkah2-Prak2.png)
+![Output](img/Output-Langkah2-Prak2.png)
 
 ### Jawaban
 
@@ -157,7 +157,7 @@ do {
 ```
 
 ### Output
-![Output](img/Output Langkah3-Prak2.png)
+![Output](img/Output-Langkah3-Prak2.png)
 
 ### Jawaban
 
@@ -181,7 +181,7 @@ for (Index = 10; index < 27; index) {
 ```
 
 ### Output
-![Output](img/Output Langkah1-Prak3.png)
+![Output](img/Output-Langkah1-Prak3.png)
 
 ---
 
@@ -191,7 +191,7 @@ for (Index = 10; index < 27; index) {
 Silakan coba eksekusi (Run) kode pada langkah 1 tersebut. Apa yang terjadi? Jelaskan!
 
 ### Output
-![Output](img/Output Langkah2-Prak3.png)
+![Output](img/Output-Langkah2-Prak3.png)
 
 ### Jawaban
 
@@ -225,7 +225,7 @@ print(index);
 ```
 
 ### Output
-![Output](img/Output Langkah3-Prak3.png)
+![Output](img/Output-Langkah3-Prak3.png)
 
 Kode tersebut masih menghasilkan error karena:
 
@@ -252,7 +252,7 @@ void main() {
 ```
 
 ### Output
-![Output](img/Output Perbaikan-Langkah3-Prak3.png)
+![Output](img/Output-Perbaikan-Langkah3-Prak3.png)
 
 Program akan menampilkan angka dari **10 sampai 20**, kemudian berhenti ketika `index == 21`.
 
@@ -296,6 +296,6 @@ void main() {
 
 ## Output
 
-![Output](img/Output TugasPraktikum.png)
+![Output](img/Output-TugasPraktikum.png)
 
 Program akan menampilkan semua **bilangan prima dari 2 sampai 201**, dan setiap bilangan prima akan disertai **nama lengkap dan NIM**.
