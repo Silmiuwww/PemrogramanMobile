@@ -1,185 +1,281 @@
 # Praktikum 03 Pengantar Bahasa Pemrograman Dart - Bagian 2
 
-Nama : Nadia Minatul Salma <br>
-NIM : 244107060141 <br>
-Absen : 12
+Nama    : Nadia Minatul Salma <br>
+NIM     : 244107060141 <br>
+Absen   : 11 <br>
 
-## Praktikum 1
-Langkah 1
+---
 
-Berikut kode program yang digunakan pada langkah 1.
+# Praktikum 1: Menerapkan Control Flows (if/else)
 
-void main() {
-  for (int i = 0; i < 10; i++) {
-    print(i);
-  }
+## Langkah 1
+
+### Soal
+Ketik atau salin kode program berikut ke dalam fungsi `main()`.
+
+```dart
+String test = "test2";
+if (test == "test1") {
+   print("Test1");
+} else If (test == "test2") {
+   print("Test2");
+} Else {
+   print("Something else");
 }
 
-Output :
+if (test == "test2") print("Test2 again");
+```
 
-![Output](Output Langkah1-Prak1.png)
+### Output
+![Output](img/Output Langkah1-Prak1.png)
 
-Penjelasan :
-Kode di atas menggunakan perulangan for untuk menampilkan angka dari 0 sampai 9. Variabel i dimulai dari 0 dan akan bertambah satu setiap perulangan sampai nilainya kurang dari 10.
+---
 
-Langkah 2
+## Langkah 2
 
-Jalankan program tersebut.
+### Soal
+Silakan coba eksekusi (Run) kode pada langkah 1 tersebut. Apa yang terjadi? Jelaskan!
 
-Output :
+### Jawaban
 
-![Output](Output Langkah3-Prak1.png)
+Saat kode dijalankan akan muncul **error**.  
+Hal ini terjadi karena penulisan keyword pada Dart **bersifat case sensitive**.
 
-Penjelasan :
-Saat program dijalankan, angka akan muncul secara berurutan mulai dari 0 hingga 9. Hal ini terjadi karena kondisi perulangan i < 10.
+Kesalahan pada kode tersebut adalah:
 
-Langkah 3
+- `If` seharusnya ditulis **if**
+- `Else` seharusnya ditulis **else**
 
-Pada langkah ini program mengalami error sehingga perlu dilakukan perbaikan.
+Karena Dart hanya mengenali keyword dengan **huruf kecil semua**, maka program tidak dapat dijalankan sebelum diperbaiki.
 
-Kode Perbaikan :
+---
 
-void main() {
-  for (int i = 0; i < 10; i++) {
-    if (i % 2 == 0) {
-      print("Bilangan Genap : $i");
-    } else {
-      print("Bilangan Ganjil : $i");
-    }
-  }
+## Langkah 3
+
+### Soal
+Tambahkan kode program berikut, lalu coba eksekusi (Run) kode Anda.
+
+```dart
+String test = "true";
+if (test) {
+   print("Kebenaran");
 }
+```
 
-Output :
+### Output
+![Output](img/Output Langkah3-Prak1.png)
 
-![Output](Output Perbaikan-Langkah3-Prak1.png)
+### Jawaban
 
-Penjelasan :
-Perbaikan dilakukan dengan menambahkan kondisi if/else untuk mengecek apakah angka tersebut genap atau ganjil. Jika i % 2 == 0 maka angka tersebut genap, sedangkan jika tidak maka angka tersebut ganjil.
+Kode tersebut menghasilkan **error** karena kondisi pada `if` harus berupa **boolean** (`true` atau `false`).  
 
-## Praktikum 2
-Langkah 1
+Variabel `test` bertipe **String**, sehingga tidak dapat langsung digunakan sebagai kondisi.
 
-Kode program pada langkah ini adalah sebagai berikut.
+---
 
+### Perbaikan Kode
+
+Kode diperbaiki dengan melakukan **perbandingan nilai string**.
+
+```dart
 void main() {
-  int angka = 5;
+  String test = "true";
 
-  if (angka > 0) {
-    print("Angka bernilai positif");
-  }
-}
-
-Output :
-
-![Output](Output Langkah1-Prak2.png)
-
-Penjelasan :
-Program ini menggunakan percabangan if untuk mengecek apakah nilai variabel angka lebih besar dari 0. Jika kondisi terpenuhi maka akan menampilkan teks bahwa angka tersebut bernilai positif.
-
-Langkah 2
-
-Program kemudian dijalankan untuk melihat hasilnya.
-
-Output :
-
-![Output](Output Langkah2-Prak2.png)
-
-Penjelasan :
-Karena nilai angka adalah 5 dan lebih besar dari 0, maka program menampilkan pesan bahwa angka tersebut positif.
-
-Langkah 3
-
-Program diperbaiki dengan menambahkan kondisi else.
-
-Kode Perbaikan :
-
-void main() {
-  int angka = -3;
-
-  if (angka > 0) {
-    print("Angka Positif");
+  if (test == "true") {
+    print("Kebenaran");
   } else {
-    print("Angka Negatif");
+    print("Bukan kebenaran");
   }
 }
+```
 
-Output :
+### Output
+![Output](img/Output Perbaikan-Langkah3-Prak1.png)
 
-![Output](Output Langkah3-Prak2.png)
+---
 
-Penjelasan :
-Pada kode ini ditambahkan percabangan else sehingga program dapat menentukan apakah angka tersebut positif atau negatif.
+# Praktikum 2: Menerapkan Perulangan while dan do-while
 
-## Praktikum 3
-Langkah 1
+## Langkah 1
 
-Kode program berikut digunakan untuk percobaan perulangan.
+### Soal
+Ketik atau salin kode program berikut ke dalam fungsi `main()`.
 
+```dart
+while (counter < 33) {
+  print(counter);
+  counter++;
+}
+```
+
+### Output
+![Output](img/Output Langkah1-Prak2.png)
+
+---
+
+## Langkah 2
+
+### Soal
+Silakan coba eksekusi (Run) kode pada langkah 1 tersebut. Apa yang terjadi? Jelaskan!
+
+### Output
+![Output](img/Output Langkah2-Prak2.png)
+
+### Jawaban
+
+Ketika program dijalankan akan muncul **error** karena variabel `counter` belum dideklarasikan.
+
+Dalam Dart, setiap variabel harus **dideklarasikan terlebih dahulu sebelum digunakan**.
+
+Perbaikannya dengan menambahkan deklarasi variabel.
+
+```dart
 void main() {
-  int i = 1;
+  int counter = 0;
 
-  while (i <= 5) {
-    print("Perulangan ke-$i");
-    i++;
+  while (counter < 33) {
+    print(counter);
+    counter++;
   }
 }
+```
 
-Output :
+Program akan menampilkan angka dari **0 sampai 32**.
 
-![Output](Output Langkah1-Prak3.png)
+---
 
-Penjelasan :
-Program menggunakan perulangan while untuk menampilkan teks sebanyak 5 kali.
+## Langkah 3
 
-Langkah 2
+### Soal
+Tambahkan kode program berikut, lalu coba eksekusi (Run) kode Anda.
 
-Program dijalankan untuk melihat hasil perulangannya.
+```dart
+do {
+  print(counter);
+  counter++;
+} while (counter < 77);
+```
 
-Output :
+### Output
+![Output](img/Output Langkah3-Prak2.png)
 
-![Output](Output Langkah2-Prak3.png)
+### Jawaban
 
-Penjelasan :
-Perulangan berjalan selama kondisi i <= 5 terpenuhi. Setiap iterasi nilai i akan bertambah satu.
+Perulangan **do-while** akan menjalankan kode **minimal satu kali terlebih dahulu**, kemudian baru mengecek kondisi.
 
-Langkah 3
+Pada program ini angka akan ditampilkan mulai dari **33 sampai 76**.
 
-Program mengalami error sehingga perlu dilakukan perbaikan.
+---
 
-Kode Perbaikan :
+# Praktikum 3: Menerapkan Perulangan for dan break-continue
 
+## Langkah 1
+
+### Soal
+Ketik atau salin kode program berikut ke dalam fungsi `main()`.
+
+```dart
+for (Index = 10; index < 27; index) {
+  print(Index);
+}
+```
+
+### Output
+![Output](img/Output Langkah1-Prak3.png)
+
+---
+
+## Langkah 2
+
+### Soal
+Silakan coba eksekusi (Run) kode pada langkah 1 tersebut. Apa yang terjadi? Jelaskan!
+
+### Output
+![Output](img/Output Langkah2-Prak3.png)
+
+### Jawaban
+
+Kode tersebut menghasilkan beberapa error karena:
+
+1. Variabel `Index` belum dideklarasikan.
+2. Penulisan `Index` dan `index` tidak konsisten.
+3. Tidak ada increment `index++`.
+
+Perbaikan kode:
+
+```dart
 void main() {
-  int i = 1;
+  for (int index = 10; index < 27; index++) {
+    print(index);
+  }
+}
+```
 
-  while (i <= 5) {
-    if (i % 2 == 0) {
-      print("Angka $i adalah genap");
-    } else {
-      print("Angka $i adalah ganjil");
+---
+
+## Langkah 3
+
+### Soal
+Tambahkan kode program berikut di dalam for-loop.
+
+```dart
+If (Index == 21) break;
+Else If (index > 1 || index < 7) continue;
+print(index);
+```
+
+### Output
+![Output](img/Output Langkah3-Prak3.png)
+
+Kode tersebut masih menghasilkan error karena:
+
+- Penulisan `If` dan `Else If` tidak sesuai dengan syntax Dart.
+- Penulisan variabel `Index` tidak konsisten.
+
+---
+
+### Perbaikan Kode
+
+```dart
+void main() {
+  for (int index = 10; index < 27; index++) {
+
+    if (index == 21) {
+      break;
+    } else if (index > 1 && index < 7) {
+      continue;
     }
-    i++;
+
+    print(index);
   }
 }
+```
 
-Output :
+### Output
+![Output](img/Output Perbaikan-Langkah3-Prak3.png)
 
-![Output](Output Perbaikan-Langkah3-Prak3.png)
+Program akan menampilkan angka dari **10 sampai 20**, kemudian berhenti ketika `index == 21`.
 
-Penjelasan :
-Perbaikan dilakukan dengan menambahkan percabangan if/else untuk menentukan apakah angka yang sedang diproses merupakan angka genap atau ganjil.
+---
 
-## Tugas Praktikum
+# Tugas Praktikum
 
-Buatlah program untuk menampilkan bilangan prima dari 0 sampai 201.
-Setiap kali ditemukan bilangan prima, tampilkan nama lengkap dan NIM.
+### Soal
 
-Kode Program :
+Buatlah sebuah program yang dapat menampilkan **bilangan prima dari angka 0 sampai 201** menggunakan Dart.  
+Ketika bilangan prima ditemukan, maka tampilkan **nama lengkap dan NIM Anda**.
 
+---
+
+## Kode Program
+
+```dart
 void main() {
   String nama = "Nadia Minatul Salma";
   String nim = "244107060141";
 
   for (int i = 2; i <= 201; i++) {
+
     bool prima = true;
 
     for (int j = 2; j < i; j++) {
@@ -194,10 +290,12 @@ void main() {
     }
   }
 }
+```
 
-Output :
+---
 
-![Output](Output TugasPraktikum.png)
+## Output
 
-Penjelasan :
-Program menggunakan perulangan for untuk mengecek setiap angka dari 2 sampai 201. Kemudian dilakukan pengecekan apakah angka tersebut memiliki faktor selain 1 dan dirinya sendiri. Jika tidak memiliki faktor lain maka angka tersebut merupakan bilangan prima. Setiap kali bilangan prima ditemukan, program akan menampilkan angka tersebut beserta nama dan NIM.
+![Output](img/Output TugasPraktikum.png)
+
+Program akan menampilkan semua **bilangan prima dari 2 sampai 201**, dan setiap bilangan prima akan disertai **nama lengkap dan NIM**.
