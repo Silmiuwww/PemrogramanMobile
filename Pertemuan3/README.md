@@ -90,7 +90,7 @@ void main() {
 ```
 
 ### Output
-![Output](img/Output Perbaikan-Langkah3-Prak1.png)
+![Output](img/Output-Perbaikan-Langkah3-Prak1.png)
 
 ---
 
