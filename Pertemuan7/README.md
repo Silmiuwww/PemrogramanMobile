@@ -30,25 +30,25 @@ Praktikum ini bertujuan untuk:
 Berikut hasil screenshot setiap langkah:
 
 - Langkah 1  
-  ![Langkah 1](Langkah1.png)
+  ![Langkah 1](img/Langkah1.png)
 
 - Langkah 2  
-  ![Langkah 2](Langkah2.png)
+  ![Langkah 2](img/Langkah2.png)
 
 - Langkah 3  
-  ![Langkah 3](Langkah3.png)
+  ![Langkah 3](img/Langkah3.png)
 
 - Langkah 4  
-  ![Langkah 4](Langkah4.png)
+  ![Langkah 4](img/Langkah4.png)
 
 - Langkah 5  
-  ![Langkah 5](Langkah5.png)
+  ![Langkah 5](img/Langkah5.png)
 
 - Langkah 6  
-  ![Langkah 6](Langkah6.png)
+  ![Langkah 6](img/Langkah6.png)
 
 - Langkah 6 (2)  
-  ![Langkah 6 (2)](Langkah6(2).png)
+  ![Langkah 6 (2)](img/Langkah6(2).png)
 
 ---
 
